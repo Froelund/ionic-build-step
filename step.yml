@@ -1,0 +1,25 @@
+name: "Step Template"
+description: |
+  This will run ionic install on your project. All the necessary tools will be installed beforehand.
+website: http://www.froelund.net/
+fork_url: https://github.com/Froelund/ionic-build-step
+source:
+  git: https://github.com/Froelund/ionic-build-step.git
+host_os_tags:
+  - "osx-10.9"
+  - "osx-10.10"
+project_type_tags: []
+type_tags:
+  - "ionic"
+  - "cordova"
+is_requires_admin_user: true
+inputs:
+  - 
+    mapped_to: PLATFORMS
+    title: "Platforms to build"
+    description: |
+      *ios*
+
+      The platform which is going to be build.
+    value: "ios"
+outputs: []
