@@ -1,5 +1,7 @@
 #!/bin/bash
 
+set -e
+
 echo "Building ${PLATFORMS}!"
 
 THIS_SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
@@ -16,7 +18,7 @@ function fail_if_cmd_error {
 
 bash "${THIS_SCRIPT_DIR}/_setup.sh"
 fail_if_cmd_error "Could not install required tools"
-
+cd $BITRISE_SOURCE_DIR
 ionic platform rm $PLATFORMS &&
 ionic platform add $PLATFORMS &&
 ionic build $PLATFORMS --release
