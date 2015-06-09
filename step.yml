@@ -1,4 +1,4 @@
-name: "Step Template"
+name: "Ionic build"
 description: |
   This will run ionic install on your project. All the necessary tools will be installed beforehand.
 website: http://www.froelund.net/
