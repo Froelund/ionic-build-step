@@ -4,6 +4,5 @@ echo "Building ${PLATFORMS}!"
 
 gem install fastlane &&
 npm -g install cordova ionic bower gulp &&
-ionic install $PLATFORMS --release
-
+ionic build $PLATFORMS --release
 exit 0
