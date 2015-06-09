@@ -17,6 +17,7 @@ ensure_command () {
 
 STARTTIME=$(date +%s)
 
+ensure_command cordova
 ensure_command ionic
 
 ENDTIME=$(date +%s)
