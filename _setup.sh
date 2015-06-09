@@ -17,10 +17,7 @@ ensure_command () {
 
 STARTTIME=$(date +%s)
 
-ensure_command cordova
 ensure_command ionic
-ensure_command bower
-ensure_command gulp
 
 ENDTIME=$(date +%s)
 echo
